@@ -10,9 +10,9 @@ body {
 
 }
 
-.gallery-image {
-	height: 300px;
-	width: 200px;
+.gallery-image:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px #ccc;
 }
 
 
