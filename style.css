@@ -10,10 +10,20 @@ body {
 
 }
 
+#gallery.img {
+	height: 90vh;
+	object-fit: cover;
+}
+
 .gallery-image:hover {
 	cursor: pointer;
-	box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 5px #ccc;
 }
+
+.b-1 {
+	padding-bottom: 25px;
+}
+
 
 
 .projects-section {
@@ -28,3 +38,28 @@ body {
 .info-title {
 	color: white;
 }
+
+/* Modal Style */
+
+.modal-body{
+    padding: 5px 5px;
+    color: #000;
+}
+
+.modal-header {
+    border-bottom: 1px solid medium-gray;
+    padding: 10px;
+    text-align: center;
+	display: block !important;
+}
+
+.modal-dialog {
+	
+	max-width: 50vh;
+  }
+  
+  .modal-content {
+	height: auto;
+	min-height: 100%;
+	border-radius: 0;
+  }

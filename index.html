@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="./assets/img//apple-icon.png">
-	<link rel="icon" type="image/png" href="./assets/img//favicon.png">
+	<link rel="icon" type="image/png" href="./assets/img/logo.webp">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>My Landing Page</title>
+	<title>Vanessa Brasfield | Graphic Design</title>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 	<!--     Fonts and icons     -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -35,13 +35,13 @@
 		  <div class="collapse navbar-collapse justify-content-end" id="navigation">
 		    <ul class="navbar-nav">
 		    	<li class="nav-item">
-		        	<a href="#projects" class="nav-link"><i class="nc-icon nc-layout-11"></i> Projects</a>
+		        	<a href="#projects" class="nav-link"><i class="nc-icon nc-palette"></i> Freelance</a>
 		    	<li class="nav-item">
-		        	<a href="#about" class="nav-link"><i class="nc-icon nc-layout-11"></i> About</a>
+		        	<a href="#about" class="nav-link"><i class="nc-icon nc-badge"></i> About</a>
 		      	</li>		      	
 		      	</li>
 		      	<li class="nav-item">
-		        	<a href="#contact" class="nav-link"><i class="nc-icon nc-book-bookmark"></i> Contact Me</a>
+		        	<a href="#contact" class="nav-link"><i class="nc-icon nc-email-85"></i> Contact Me</a>
 		      	</li>
 		      	<li class="nav-item">
 		        	<a class="nav-link" rel="tooltip" title="Follow me on Twitch" data-placement="bottom" href="https://www.twitch.tv/PleasantlyTwstd" target="_blank">
@@ -96,27 +96,29 @@
 	        <br/>
           <br/>
           
-          <!-- PROJECT GALLERY -->
+          <!-- Avatars GALLERY -->
 
+          <h2>Twitch Avatars</h2>
+          <br />
           
-          <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100 gallery-image" src="./assets/img/projects/avatars/1.webp" data-target="#carouselExample" data-slide-to="0">
+          <div class="row" id="gallery" data-toggle="modal" data-target="#AvatarModal">
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/avatars/LivanaPrime.png" data-target="#carouselAvatar" data-slide-to="0">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100 gallery-image" src="./assets/img/projects/badges/1.webp" data-target="#carouselExample" data-slide-to="1">
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/avatars/Synxiec.png" data-target="#carouselAvatar" data-slide-to="1">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100 gallery-image" src="./assets/img/projects/emotes/1.webp" data-target="#carouselExample" data-slide-to="2">
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/avatars/Factoid_DS.png" data-target="#carouselAvatar" data-slide-to="2">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100 gallery-image" src="./assets/img/projects/panels/1.webp" data-target="#carouselExample" data-slide-to="3">
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/avatars/Terra.png" data-target="#carouselAvatar" data-slide-to="3">
             </div>
           </div>
 
           <!--Modal-->
 
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal fade" id="AvatarModal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -127,26 +129,352 @@
                 <div class="modal-body">
                   
                 <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
-                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                <div id="carouselAvatar" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-block w-100" src="./assets/img/projects/avatars/1.webp">
+                        <img class="d-block w-100" src="./assets/img/projects/avatars/LivanaPrime.png">
+                        <h3>1</h3>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="./assets/img/projects/badges/1.webp">
+                        <img class="d-block w-100" src="./assets/img/projects/avatars/Synxiec.png">
+                        <h3>2</h3>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="./assets/img/projects/emotes/1.webp">
+                        <img class="d-block w-100" src="./assets/img/projects/avatars/Factoid_DS.png">
+                        <h3>3</h3>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="./assets/img/projects/panels/1.webp">
+                        <img class="d-block w-100" src="./assets/img/projects/avatars/Terra.png">
+                        <h3>4</h3>
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselAvatar" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselAvatar" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--BADGES GALLERY-->
+
+          <h2>Twitch Badges</h2>
+          <br />
+          
+          <div class="row" id="gallery" data-toggle="modal" data-target="#badgeModal">
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/badges/KyleLUL.png" data-target="#carouselBadge" data-slide-to="0">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/badges/Lukyra.png" data-target="#carouselBadge" data-slide-to="1">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/badges/Whitehorse.png" data-target="#carouselBadge" data-slide-to="2">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/badges/personal.png" data-target="#carouselBadge" data-slide-to="3">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/badges/VivimusPrime.png" data-target="#carouselBadge" data-slide-to="4">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/badges/RamenWitch.png" data-target="#carouselBadge" data-slide-to="5">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/badges/MoilyJ.png" data-target="#carouselBadge" data-slide-to="6">
+            </div>
+          </div>
+
+          <!--Modal-->
+
+          <div class="modal fade" id="badgeModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carouselBadge" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./assets/img/projects/badges/KyleLUL.png">
+                        <h3>1</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/badges/Lukyra.png">
+                        <h3>2</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/badges/Whitehorse.png">
+                        <h3>3</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/badges/personal.png">
+                        <h3>4</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/badges/VivimusPrime.png">
+                        <h3>5</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/badges/RamenWitch.png">
+                        <h3>6</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/badges/MoilyJ.png">
+                        <h3>7</h3>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselBadge" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselBadge" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--TWITCH EMOTES-->
+
+          <h2>Twitch Emotes</h2>
+          <br />
+          
+          <div class="row" id="gallery" data-toggle="modal" data-target="#emoteModal">
+            <div class="col-12 col-sm-6 col-lg-4 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/emotes/personal.png" data-target="#carouselEmote" data-slide-to="0">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/emotes/LivanaBell.png" data-target="#carouselEmote" data-slide-to="1">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/emotes/VivimusPrime.png" data-target="#carouselEmote" data-slide-to="2">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/emotes/Passion.png" data-target="#carouselEmote" data-slide-to="3">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/emotes/Lucky.png" data-target="#carouselEmote" data-slide-to="4">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/emotes/Anoriand.png" data-target="#carouselEmote" data-slide-to="5">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 offset-md-4 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/emotes/synmurph.png" data-target="#carouselEmote" data-slide-to="6">
+            </div>
+          </div>
+
+          <!--Modal-->
+
+          <div class="modal fade" id="emoteModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carouselEmote" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./assets/img/projects/emotes/personal.png">
+                        <h3>1</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/emotes/LivanaBell.png">
+                        <h3>2</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/emotes/VivimusPrime.png">
+                        <h3>3</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/emotes/Passion.png">
+                        <h3>4</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/emotes/Lucky.png">
+                        <h3>5</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/emotes/Anoriand.png">
+                        <h3>6</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/emotes/synmurph.png">
+                        <h3>7</h3>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselEmote" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselEmote" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--TWITCH PANELS-->
+
+          <h2>Twitch Panels</h2>
+          <br />
+          
+          <div class="row" id="gallery" data-toggle="modal" data-target="#panelModal">
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/panels/1.webp" data-target="#carouselPanel" data-slide-to="0">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/panels/1.webp" data-target="#carouselPanel" data-slide-to="1">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/panels/1.webp" data-target="#carouselPanel" data-slide-to="2">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/panels/1.webp" data-target="#carouselPanel" data-slide-to="3">
+            </div>
+          </div>
+
+          <!--Modal-->
+
+          <div class="modal fade" id="panelModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carouselPanel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./assets/img/projects/panels/1.webp">
+                        <h3>1</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/panels/1.webp">
+                        <h3>2</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/panels/1.webp">
+                        <h3>3</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/panels/1.webp">
+                        <h3>4</h3>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselPanel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselPanel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--TWITCH OVERLAYS-->
+
+          <h2>Twitch Overlays</h2>
+          <br />
+          
+          <div class="row" id="gallery" data-toggle="modal" data-target="#overlayModal">
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/panels/1.webp" data-target="#carouselOverlay" data-slide-to="0">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/panels/1.webp" data-target="#carouselOverlay" data-slide-to="1">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/panels/1.webp" data-target="#carouselOverlay" data-slide-to="2">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 b-1">
+              <img class="w-100 gallery-image" src="./assets/img/projects/panels/1.webp" data-target="#carouselOverlay" data-slide-to="3">
+            </div>
+          </div>
+
+          <!--Modal-->
+
+          <div class="modal fade" id="overlayModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carouselOverlay" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./assets/img/projects/panels/1.webp">
+                        <h3>1</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/panels/1.webp">
+                        <h3>2</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/panels/1.webp">
+                        <h3>3</h3>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/projects/panels/1.webp">
+                        <h3>4</h3>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselPanel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselPanel" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
