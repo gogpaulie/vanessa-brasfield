@@ -12,7 +12,7 @@ body {
 
 .page-header {
 	
-		
+	background-image: url(./assets/img/header3.jpg);	
 }
 
 #myVideo {
@@ -115,6 +115,12 @@ body {
 .modal-overlays {
 	max-width: 75%;
 }
+
+#contact {
+	
+	color: #05453B;
+}
+
   
 /* .modal-content {
 	height: auto;
