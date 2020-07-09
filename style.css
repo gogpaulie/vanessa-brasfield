@@ -62,6 +62,10 @@ body {
 }
   
 
+.project-title {
+	color: #FFFFFF;
+}
+
 #gallery.img {
 	height: 90vh;
 	object-fit: cover;
