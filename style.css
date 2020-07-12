@@ -141,13 +141,14 @@ body {
 		grid-template-columns: 50% 50%	
   }
 
-  	.navbar {
+  	.navbar-translate {
 		  height: 10vh;
+		  margin: 10px 10px;
 	  }
 	.nav-logo {
 		height: 80px;
 		width: 80px;
-		margin-top: -10px;
+		
 	}
 	
   
