@@ -134,3 +134,10 @@ body {
 
 /* Media queries */
 
+@media (max-width: 575px) {
+	#gallery {
+		display: grid;
+		grid-template-columns: 50% 50%	
+  }
+  
+}
