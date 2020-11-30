@@ -1,3 +1,36 @@
+<?php
+  $message_sent = false;
+  if(isset($_POST['email']) && $_POST['email'] != ''){
+    
+    if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
+      // submit the form
+      $userName = $_POST['name'];
+      $userEmail = $_POST['email'];
+      $messageSubject = $_POST['subject'];
+      $message = $_POST['message'];
+
+      $to = "ppolih21@gmail";
+      $body = "";
+
+      $body .= "From: ".$userName. "\r\n";
+      $body .= "Email: ".$userEmail. "\r\n";
+      $body .= "Message: ".$message. "\r\n";
+
+      mail($to, $messageSubject, $body);
+
+      $message_sent = true;
+    }
+    else {
+      $invalid_class_name = "form-invalid";
+    }
+  }
+
+  
+
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +47,8 @@
 	<link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="./assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
 	<!-- My CSS -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="webform.css">
 </head>
 <body>
 	<!-- Nav Bar -->
@@ -734,43 +768,76 @@
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="text-center">Get in touch!</h2>
             <div class="text-center">
-              <button type="button" class="btn btn-default" id="emailBtn"><a href="mailto:pleasantlytwstd@gmail.com">Send email</a></button>
+              <!-- <button type="button" class="btn btn-default" id="emailBtn"><a href="mailto:pleasantlytwstd@gmail.com">Send email</a></button>
               
               <p>DMs on Twitter also open @pleasantlytwstd<a href="https://twitter.com/pleasantlytwstd?s=20" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a></p>
+            </div> -->
+            <?php
+            if($message_sent):
+            ?>
+              <h3>Thanks, I'll get back to you as soon as I can! 😁</h3>
+            <?php
+            else:
+            ?>
+            <div class="form-container">
+              <form action="webform.php" method="POST" class="form">
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Jane Doe"
+                    tabindex="1"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input
+                    <?= $invalid_class_name ?? "" ?>
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="jane@doe.com"
+                    tabindex="2"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                    placeholder="Hello There!"
+                    tabindex="3"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    rows="5"
+                    cols="50"
+                    id="message"
+                    name="message"
+                    placeholder="Enter Message..."
+                    tabindex="4"
+                  ></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="btn">Send Message!</button>
+                </div>
+              </form>
             </div>
-            <!-- <form class="contact-form">
-              <div class="row">
-                <div class="col-md-6">
-                  <label>Name</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="nc-icon nc-single-02"></i>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Name">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <label>Email</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="nc-icon nc-email-85"></i>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Email">
-                  </div>
-                </div>
-              </div>
-              <label>Message</label>
-              <textarea class="form-control" rows="4" placeholder="Write your message here..."></textarea>
-              <div class="row">
-                <div class="col-md-4 ml-auto mr-auto">
-                  <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
-                </div>
-              </div>
-            </form> -->
+            <?php
+            endif;
+            ?>
           </div>
         </div>
       </div>
